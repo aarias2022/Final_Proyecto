@@ -32,7 +32,13 @@ if(!isset($_SESSION['valid'])) {
                     <h4>Inicio</h4>
                 </div>
             </a>
-            
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-address-card" title="Buscar"></i>
+                    <h4>Buscar</h4>
+                </div>
+            </a>
 </div>
   <main>  
     <h2 th:text="'Listado de tareas de ' + ${usuario.nombre}"></h2>
