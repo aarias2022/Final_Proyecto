@@ -17,6 +17,14 @@ if(!isset($_SESSION['valid'])) {
     <link rel="stylesheet" href="css/Estilos2.css">
   </head>
   <body>
+  <div class="menu__side" id="menu_side">
+
+<div class="name__page">
+    <i class="far fa-sticky-note"></i>
+    <h4>lista de tareas</h4>
+</div>
+</div>
+  <main>  
     <h2 th:text="'Listado de tareas de ' + ${usuario.nombre}"></h2>
     <h1 class="text-center py-4 my-4">Lista de Tareas</h1>
 
@@ -74,5 +82,6 @@ if(!isset($_SESSION['valid'])) {
 </table>
         </div>
     </div>
+    </main>
   </body>
 </html>
