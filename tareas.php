@@ -23,6 +23,16 @@ if(!isset($_SESSION['valid'])) {
     <i class="far fa-sticky-note"></i>
     <h4>lista de tareas</h4>
 </div>
+
+<div class="options__menu">	
+
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            
 </div>
   <main>  
     <h2 th:text="'Listado de tareas de ' + ${usuario.nombre}"></h2>
