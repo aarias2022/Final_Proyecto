@@ -59,7 +59,7 @@ if(!isset($_SESSION['valid'])) {
 
             <a href="#">
                 <div class="option">
-                    <i  title="Cerrar"></i>
+                    <i class="far fa-id-badge" title="Cerrar"></i>
                     <h4>Cerrar Sesion</h4>
                 </div>
             </a>
