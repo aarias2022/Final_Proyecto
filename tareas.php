@@ -15,12 +15,22 @@ if(!isset($_SESSION['valid'])) {
     <title>Lista de Tareas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Estilos2.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
+
+  <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+    
   <div class="menu__side" id="menu_side">
 
 <div class="name__page">
-    <i class="far fa-sticky-note"></i>
+    <i class="fa fa-edit"></i>
     <h4>lista de tareas</h4>
 </div>
 
@@ -28,21 +38,21 @@ if(!isset($_SESSION['valid'])) {
 
             <a href="#" class="selected">
                 <div class="option">
-                    <i class="fas fa-home" title="Inicio"></i>
+                    <i  title="Inicio"></i>
                     <h4>Inicio</h4>
                 </div>
             </a>
 
             <a href="#">
                 <div class="option">
-                    <i class="far fa-address-card" title="Buscar"></i>
+                    <i title="Buscar"></i>
                     <h4>Buscar</h4>
                 </div>
             </a>
             
             <a href="#">
                 <div class="option">
-                    <i class="far fa-address-card" title="Cambiar Contraseña"></i>
+                    <i title="Cambiar Contraseña"></i>
                     <h4>Cambiar Contraseña</h4>
                 </div>
             </a>
