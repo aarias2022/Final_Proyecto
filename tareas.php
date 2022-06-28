@@ -19,22 +19,22 @@ if(!isset($_SESSION['valid'])) {
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 
   </head>
-  <body>
+  <body id="body">
 
   <header>
         <div class="icon__menu">
             <i class="fas fa-bars" id="btn_open"></i>
         </div>
     </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa fa-edit"></i>
+            <h4>lista de tareas</h4>
+        </div>
     
-  <div class="menu__side" id="menu_side">
-
-<div class="name__page">
-    <i class="fa fa-edit"></i>
-    <h4>lista de tareas</h4>
-</div>
-
-<div class="options__menu">	
+        <div class="options__menu">	
 
             <a href="#" class="selected">
                 <div class="option">
@@ -49,14 +49,14 @@ if(!isset($_SESSION['valid'])) {
                     <h4>Buscar</h4>
                 </div>
             </a>
-            
+
             <a href="#">
                 <div class="option">
                     <i class="far fa-address-card" title="Cambiar Contraseña"></i>
                     <h4>Cambiar Contraseña</h4>
                 </div>
             </a>
-
+            
             <a href="#">
                 <div class="option">
                     <i class="far fa-id-badge" title="Cerrar"></i>
@@ -65,8 +65,8 @@ if(!isset($_SESSION['valid'])) {
             </a>
 
             </div>
-</div>
-  <main>  
+        </div>
+        <main>   
     <h2 th:text="'Listado de tareas de ' + ${usuario.nombre}"></h2>
     <h1 class="text-center py-4 my-4">Lista de Tareas</h1>
 
@@ -119,11 +119,11 @@ if(!isset($_SESSION['valid'])) {
         }
     
     ?>
-   
   </tbody>
 </table>
         </div>
     </div>
     </main>
+    <script src="js/menu.js"></script>
   </body>
 </html>

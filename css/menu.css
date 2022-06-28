@@ -133,3 +133,24 @@ a.selected{
     left: -30px;
 }
 
+/*usar en JavaScript*/
+
+.body_move{
+    margin-left: 250px;
+}
+
+.menu__side_move{
+    width: 250px;
+}
+
+
+@media screen and (max-width: 760px){
+    .body_move{
+        margin-left: 0px;
+    }
+
+    .menu__side_move{
+        width: 80px;
+        left: -80px;
+    }
+}
