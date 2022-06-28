@@ -38,7 +38,7 @@ if(!isset($_SESSION['valid'])) {
 
             <a href="#" class="selected">
                 <div class="option">
-                    <i  title="Inicio"></i>
+                    <i class="fas fa-home" title="Inicio"></i>
                     <h4>Inicio</h4>
                 </div>
             </a>
