@@ -52,7 +52,7 @@ if(!isset($_SESSION['valid'])) {
             
             <a href="#">
                 <div class="option">
-                    <i title="Cambiar Contraseña"></i>
+                    <i class="far fa-address-card" title="Cambiar Contraseña"></i>
                     <h4>Cambiar Contraseña</h4>
                 </div>
             </a>
