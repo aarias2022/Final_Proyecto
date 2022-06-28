@@ -74,6 +74,7 @@ if(!isset($_SESSION['valid'])) {
 </table>
 
 <a  href="cambiarcontraseña.php"> Cambiar contraseña </a>
+<a  href="cerrarsesion.php"> Cerrar sesion </a>
         </div>
     </div>
   </body>
