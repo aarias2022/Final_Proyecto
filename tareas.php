@@ -45,7 +45,7 @@ if(!isset($_SESSION['valid'])) {
 
             <a href="#">
                 <div class="option">
-                    <i title="Buscar"></i>
+                    <i class="fa fa-search" title="Buscar"></i>
                     <h4>Buscar</h4>
                 </div>
             </a>
