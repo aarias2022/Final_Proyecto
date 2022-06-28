@@ -17,7 +17,7 @@ if(!isset($_SESSION['valid'])) {
     <link rel="stylesheet" href="css/Estilos2.css">
   </head>
   <body>
-    <h2 th:text="'Listado de tareas de ' + ${usuario.nombre}"></h2>
+  <h1  class="text-center py-4 my-4">Hola, <b><?php echo htmlspecialchars($_SESSION["valid"]); ?></b> Bienvenid@ a tu lista de Tareas</h1>
     <h1 class="text-center py-4 my-4">Lista de Tareas</h1>
 
     <div class="w-50 m-auto">
