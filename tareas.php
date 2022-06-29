@@ -90,6 +90,7 @@ if(!isset($_SESSION['valid'])) {
     <tr>
       <th scope="col" name="ID_Tarea">Nro Tarea</th>
       <th scope="col">Lista de tareas</th>
+      <th scope="col">Fecha de creacion</th>
     <th>Action</th>
     </tr>
   </thead>
@@ -104,11 +105,13 @@ if(!isset($_SESSION['valid'])) {
                 while($row = mysqli_fetch_assoc($result)){
                     $ID_tarea = $row['ID_tarea'];
                     $tarea = $row['tarea'];
+                    $fecha = $row['fecha'];
                 
                  ?>
                 <tr>
                 <td><?php echo $ID_tarea ?></td>
                 <td><?php echo $tarea ?></td>
+                <td><?php echo $fecha ?></td>
                 <td>
                 <a href = "eliminar.php?ID_tarea=<?php echo $ID_tarea ?>" class="btn btn-danger btn-sm">Eliminar</a>
                 <a href = "editartarea.php?ID_tarea=<?php echo $ID_tarea ?>" class=" btn btn-warning btn-sm">Editar</a>
