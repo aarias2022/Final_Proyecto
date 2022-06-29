@@ -34,6 +34,7 @@ CREATE TABLE `t_tarea` (
   `ID_tarea` int(11) NOT NULL,
   `tarea` varchar(500) COLLATE utf8_spanish2_ci NOT NULL,
   `fecha` date DEFAULT CURRENT_TIMESTAMP,
+  `fechaF` date,
   `usuarios_ID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
