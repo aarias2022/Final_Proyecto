@@ -65,6 +65,11 @@ if(!isset($_SESSION['valid'])) {
                 <button type="button" class=" btn btn-primary btn-sm dropdown-toggle" id="darkButton"
                 data-bs-toggle="dropdown" aria-expanded="fase">Estado
                 </button>
+                <ul class ="dropdown-menu dropdown-menu-dark">
+                    <li><a href = "#" class="dropdown-item">Inicio</a></li>
+                    <li><a href = "#" class="dropdown-item">En Proceso</a></li>
+                    <li><a href = "#" class="dropdown-item">Finalizo</a></li>                           
+                </ul>
                 </tr>
                 </tr>
                 <?php
