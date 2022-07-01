@@ -21,4 +21,25 @@
           >
           <br>
           <input type="submit" name="enviar" value ="Buscar">
-      </div>      
+      </div>
+      </form>
+  </div>
+  <?php
+    include 'bd.php';
+        if(isset($_GET['enviar'])){
+            $busqueda = $_GET['busqueda'];
+            $consulta = $conexion->query("SELECT * FROM t_tarea WHERE tarea LIKE %$busqueda%");            
+
+            if($consulta){
+                while($row = mysqli_fetch_assoc($consulta)){
+                $tarea = $row['tarea'];                
+                
+                
+        }
+    }
+}   
+        
+    ?>
+    
+</body>
+</html>      
