@@ -12,3 +12,13 @@
 </head>
 <body>
 <h1 class="text-center py-4 my-4">Buscar Tarea</h1>
+
+<div class="w-50 m-auto">
+    <form action="" method="get" autocomplete="off">
+      <div class="form-group">
+        <label for="title">Tarea</label>
+        <input class="form-control" type="text" name="busqueda"  placeholder="Buscar tarea"
+          >
+          <br>
+          <input type="submit" name="enviar" value ="Buscar">
+      </div>      
