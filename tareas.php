@@ -62,6 +62,9 @@ if(!isset($_SESSION['valid'])) {
                 <td>
                 <a href = "eliminar.php?ID_tarea=<?php echo $ID_tarea ?>" class="btn btn-danger btn-sm">Eliminar</a>
                 <a href = "editartarea.php?ID_tarea=<?php echo $ID_tarea ?>" class=" btn btn-warning btn-sm">Editar</a>
+                <button type="button" class=" btn btn-primary btn-sm dropdown-toggle" id="darkButton"
+                data-bs-toggle="dropdown" aria-expanded="fase">Estado
+                </button>
                 </tr>
                 </tr>
                 <?php
