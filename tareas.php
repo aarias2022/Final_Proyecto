@@ -19,6 +19,7 @@ if(!isset($_SESSION['valid'])) {
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 
   </head>
+
   <body id="body">
 
   <header>
@@ -68,15 +69,15 @@ if(!isset($_SESSION['valid'])) {
         </div>
         <main>   
     <h2 th:text="'Listado de tareas de ' + ${usuario.nombre}"></h2>
-    <h1 class="text-center py-4 my-4">Lista de Tareas</h1>
+=======
 
-    <div class="w-50 m-auto">
-    <form action="insertar.php" method="post">
-        <div class="form-group">
-            <label for="title">Ingrese una tarea nueva</label>
             <input class="form-control"  type="text" name="tarea" id="tarea" placeholder="Ingrese tarea" Required>
+
             <label for="title">Ingrese fecha</label>
             <input class="form-control"  type="date" name="fecha" id="fecha" Required>
+
+=======
+
 
         </div><br>
         <button class="btn btn-success">Agregar Tarea</button>
@@ -92,8 +93,12 @@ if(!isset($_SESSION['valid'])) {
     <tr>
       <th scope="col" name="ID_Tarea">Nro Tarea</th>
       <th scope="col">Lista de tareas</th>
+
       <th scope="col">Fecha de creacion</th>
       <th scope="col">Fecha de entrega</th>
+=======
+      
+
     <th>Action</th>
     </tr>
   </thead>
@@ -118,6 +123,19 @@ if(!isset($_SESSION['valid'])) {
                 <td><?php echo $fecha ?></td>
                 <td><?php echo $fechaF ?></td>
                 <td>
+                <td>
+                <script type="text/javascript">
+                function ShowSelected()
+                {
+                  /* Para obtener el valor */
+                var cod = document.getElementById("prioridad").value;
+ 
+                /* Para obtener el texto */
+                var combo = document.getElementById("prioridad");
+                var selected = combo.options[combo.selectedIndex].text;
+                }
+                </script>
+                </td>
                 <a href = "eliminar.php?ID_tarea=<?php echo $ID_tarea ?>" class="btn btn-danger btn-sm">Eliminar</a>
                 <a href = "editartarea.php?ID_tarea=<?php echo $ID_tarea ?>" class=" btn btn-warning btn-sm">Editar</a>
                 </tr>
@@ -129,6 +147,9 @@ if(!isset($_SESSION['valid'])) {
     ?>
   </tbody>
 </table>
+
+<a  href="cambiarcontraseña.php"> Cambiar contraseña </a>
+<a  href="cerrarsesion.php"> Cerrar sesion </a>
         </div>
     </div>
     </main>
